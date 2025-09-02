@@ -529,13 +529,8 @@ p {
 
 .pre-schedule-image {
   flex: 1;
-  background-image: linear-gradient(
-      to right,
-      #dec1ff 10%,
-      #EAD7FF00
-      
-    ),
-    url("../images/preschool.png");
+  background-image: linear-gradient(to right, #dec1ff 10%, #ead7ff00),
+    url("./images/preschool.png");
   background-size: cover;
   background-position: left;
   background-repeat: no-repeat;
@@ -543,7 +538,7 @@ p {
   right: 0;
   top: 0;
   bottom: 0;
-  width:60%;
+  width: 60%;
 }
 
 .pre-schedule-subtitle {
@@ -608,12 +603,12 @@ p {
 .must-visit-section::after {
   content: "";
   position: absolute;
-  bottom: -100px;
+  bottom: 0;
   left: 0;
   width: 100%;
-  height: 200px;
+  height: 150px;
   background: white;
-  transform: skewY(-5deg);
+  clip-path: polygon(100% 100%, 0% 100%, 0 60%, 50% 100%, 100% 60%);
   z-index: 1;
 }
 
@@ -693,6 +688,7 @@ p {
   padding-top: 40px;
   color: white;
   height: 250px;
+  margin-top: 40px;
 }
 
 .footer-content {
